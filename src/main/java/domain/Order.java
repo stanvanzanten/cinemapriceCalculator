@@ -81,7 +81,6 @@ public class Order
         }
 
         double price = PremiumPrice();
-        System.out.println("the price" + price);
         for(int i = 0; i < amountofTicketsToPayFor; i++) {
             price += this.tickets.get(i).getPrice();
         }

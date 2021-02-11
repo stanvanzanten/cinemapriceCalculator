@@ -1,5 +1,7 @@
-package domain;
-
+import domain.Movie;
+import domain.MovieScreening;
+import domain.MovieTicket;
+import domain.Order;
 import org.junit.Test;
 
 import java.time.LocalDate;
