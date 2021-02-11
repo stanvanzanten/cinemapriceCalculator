@@ -40,7 +40,7 @@ public class Main {
 //        try {
 //            String title = "You have reserved tickets for the movie: "+ screeningOne + " on " + screeningOne.getDateAndTime().getDayOfWeek();
 //            String totalprice = "\nThe total price of your order: " + orderOne.calculatePrice() + " eurootjes";
-//            File newTextFile = new File("D:/ticketorder1.txt");
+//            File newTextFile = new File("/Users/stan/Documents/Avans/Avans jaar 3/SOA 3/ticketorder1.txt");
 //
 //            FileWriter fw = new FileWriter(newTextFile);
 //            fw.write(title);
@@ -51,6 +51,8 @@ public class Main {
 //            //do stuff with exception, i don't
 //            iox.printStackTrace();
 //        }
+//
+//        orderOne.export(TicketExportFormat.PLAINTEXT);
 
         System.out.println("The total price of your order: " + orderOne.calculatePrice() + " eurootjes");
 
