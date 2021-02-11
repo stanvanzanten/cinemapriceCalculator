@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="cinemapricecalculator" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="domain.Main" />
+    <module name="cinemapricecalculator" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
