@@ -1,5 +1,7 @@
 package domain;
 
+import domain.State.*;
+
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 
@@ -10,12 +12,46 @@ public class Order
 
     private ArrayList<MovieTicket> tickets;
 
+    private State state;
+
     public Order(int orderNr, boolean isStudentOrder)
     {
         this.orderNr = orderNr;
         this.isStudentOrder = isStudentOrder;
 
         tickets = new ArrayList<MovieTicket>();
+
+        state = new CreatedState(this);
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    //These can later be used in the main to walk through the process.
+
+    public void Create() {
+        state.create();
+    }
+
+    public void Submit() {
+        state.submit();
+    }
+
+    public void Reserve() {
+        state.reserve();
+    }
+
+    public void Pay() {
+        state.pay();
+    }
+
+    public void Cancel() {
+        state.cancel();
     }
 
     public int getOrderNr()

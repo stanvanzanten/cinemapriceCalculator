@@ -37,6 +37,15 @@ public class Main {
         orderOne.addSeatReservation(ticketFive);
         orderOne.addSeatReservation((ticketSix));
 
+        orderOne.Create();
+        System.out.println("The state that you're in:" + orderOne.getState());
+        orderOne.Submit();
+        System.out.println("The state that you're in:" + orderOne.getState());
+        orderOne.Reserve();
+        System.out.println("The state that you're in:" + orderOne.getState());
+        orderOne.Pay();
+        System.out.println("The state that you're in:" + orderOne.getState());
+
 //        try {
 //            String title = "You have reserved tickets for the movie: "+ screeningOne + " on " + screeningOne.getDateAndTime().getDayOfWeek();
 //            String totalprice = "\nThe total price of your order: " + orderOne.calculatePrice() + " eurootjes";
